@@ -33,7 +33,7 @@ if (!error_get_last()) {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['data']['debug'][] = $str;};
     
     // Настройки вашей почты
-    $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
+    $mail->Host       = 'ssl://smtp.yandex.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'dimitriy.bogatiy@yandex.ru'; // Логин на почте
     $mail->Password   = 'pwagfvjqxlsfbljo'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
