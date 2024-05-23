@@ -38,10 +38,10 @@ if (!error_get_last()) {
     $mail->Password   = 'pwagfvjqxlsfbljo'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('username@yandex.ru', 'Dima'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('dimitriy.bogatiy@yandex.ru', 'Dima'); // Адрес самой почты и имя отправителя
     
     // Получатель письма
-    $mail->addAddress('dimitriy.bogatiy@yande.ru');  
+    $mail->addAddress('dimitriy.bogatiy@yandex.ru');  
     
     // Прикрипление файлов к письму
     if (!empty($file['name'][0])) {
