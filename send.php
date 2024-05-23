@@ -33,12 +33,12 @@ if (!error_get_last()) {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['data']['debug'][] = $str;};
     
     // Настройки вашей почты
-    $mail->Host       = 'imap.yandex.ru'; // SMTP сервера вашей почты
+    $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'dimitriy.bogatiy@yandex.ru'; // Логин на почте
     $mail->Password   = 'pwagfvjqxlsfbljo'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 993;
-    $mail->setFrom('dimitriy.bogatiy@yandex.ru', 'Dima'); // Адрес самой почты и имя отправителя
+    $mail->Port       = 465;
+    $mail->setFrom('dimitriy.bogatiy', 'Dima'); // Адрес самой почты и имя отправителя
     
     // Получатель письма
     $mail->addAddress('dimitriy.bogatiy@yandex.ru');  
